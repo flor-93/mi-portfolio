@@ -7,8 +7,7 @@
   <br>
 </h2>
 
-## Features 
-
+## Features
 
 ⚡️ Modern UI Design + Reveal Animations\
 ⚡️ One Page Layout built with React\
