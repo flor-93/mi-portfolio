@@ -25,7 +25,7 @@ const About = () => {
   return (
     <section id="about">
       <Container>
-        <Title title="About Me" />
+        <Title title="Sobre mí" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
@@ -38,15 +38,43 @@ const About = () => {
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
-                  {paragraphOne ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                  {paragraphOne || (
+                    <span>
+                      En mis tiempos libres me gusta salir a andar en bici, soy fan de Harry Potter
+                      y el ambiente del diseño y desarrollo me apasiona.
+                    </span>
+                  )}
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                  {paragraphTwo || (
+                    <div>
+                      <span>
+                        Siento que es un desafío poder comunicar una idea clara con pocos recursos
+                        gráficos y a su vez ricos.
+                      </span>
+                      <br />
+                      <span>
+                        <i>"Menos es más" </i>
+                        es mí frase de cabecera.
+                      </span>
+                      <br />
+                      <span>
+                        Me encanta poder combinar estos dos mundos para así lograr crear un espacio
+                        en el que el usuario tenga una experiencia interactiva en un sitio web o
+                        aplicación
+                      </span>
+                    </div>
+                  )}
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                  {paragraphThree || (
+                    <div>
+                      <span>
+                        Disfruto mucho de mí trabajo ya que es mí pasión, disfruto aprender
+                        constantemente y crecer profesionalmente.
+                      </span>
+                    </div>
+                  )}
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">
@@ -56,7 +84,7 @@ const About = () => {
                       className="cta-btn cta-btn--resume"
                       href={resume}
                     >
-                      Resume
+                      Curriculum
                     </a>
                   </span>
                 )}
