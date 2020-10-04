@@ -28,8 +28,18 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'portada_branding.png',
+    title: 'Branding',
+    info:
+      'Este fue mi proyecto de segundo año de Diseño. Creé y diseñé el manual e identidad para la marca de calzados deportivos "Navein". Realicé aplicaciones en papelería, packaging y merchandising',
+    info2: 'Navein - Marca de Calzado Deportivo',
+    url: '',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'project.jpg',
-    title: '',
+    title: 'Desarrollo Web',
     info: '',
     info2: '',
     url: '',
@@ -38,7 +48,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
+    title: 'Redes Sociales',
     info: '',
     info2: '',
     url: '',
@@ -47,7 +57,34 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
+    title: 'Editorial',
+    info: '',
+    info2: '',
+    url: '',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'Tarjetría social',
+    info: '',
+    info2: '',
+    url: '',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'Artesanal',
+    info: '',
+    info2: '',
+    url: '',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'Fotografía',
     info: '',
     info2: '',
     url: '',

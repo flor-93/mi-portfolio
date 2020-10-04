@@ -25,7 +25,7 @@ const About = () => {
   return (
     <section id="about">
       <Container>
-        <Title title="Sobre mí" />
+        {/* <Title title="Sobre mí" /> */}
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
@@ -34,45 +34,50 @@ const About = () => {
               </div>
             </Fade>
           </Col>
-          <Col md={6} sm={12}>
+          <Col md={4} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-              <div className="about-wrapper__info">
-                <p className="about-wrapper__info-text">
+              <div
+                className="about-wrapper__info"
+                style={{ paddingTop: '15px', justifyContent: 'flex-start' }}
+              >
+                <h2 className="section-title" style={{ textAlign: 'start' }}>
+                  Sobre mí
+                </h2>
+                <p className="about-wrapper__info-text" style={{ fontSize: '24px' }}>
                   {paragraphOne || (
                     <span>
-                      En mis tiempos libres me gusta salir a andar en bici, soy fan de Harry Potter
-                      y el ambiente del diseño y desarrollo me apasiona.
+                      Fana de Harry Potter y del diseño. Me desafío día a día a poder comunicar una
+                      idea clara con mínimos recursos.
                     </span>
                   )}
                 </p>
-                <p className="about-wrapper__info-text">
+                <p
+                  className="about-wrapper__info-text"
+                  style={{ paddingTop: '20px', fontSize: '24px' }}
+                >
                   {paragraphTwo || (
                     <div>
                       <span>
-                        Siento que es un desafío poder comunicar una idea clara con pocos recursos
-                        gráficos y a su vez ricos.
-                      </span>
-                      <br />
-                      <span>
                         <i>"Menos es más" </i>
-                        es mí frase de cabecera.
                       </span>
                       <br />
-                      <span>
+                      <p style={{ fontSize: '16px' }}>es mí frase de cabecera.</p>
+                      {/* <span>
                         Me encanta poder combinar estos dos mundos para así lograr crear un espacio
                         en el que el usuario tenga una experiencia interactiva en un sitio web o
                         aplicación
-                      </span>
+                      </span> */}
                     </div>
                   )}
                 </p>
-                <p className="about-wrapper__info-text">
+                <p className="about-wrapper__info-text" style={{ fontSize: '16px' }}>
                   {paragraphThree || (
                     <div>
-                      <span>
-                        Disfruto mucho de mí trabajo ya que es mí pasión, disfruto aprender
-                        constantemente y crecer profesionalmente.
-                      </span>
+                      {/* <span>es mí frase de cabecera.</span> */}
+                      {/* <span>
+                        Disfruto mucho de mí trabajo ya que es mí pasión, me gusta aprender cosas
+                        nuevas para así crecer profesionalmente.
+                      </span> */}
                     </div>
                   )}
                 </p>
