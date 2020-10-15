@@ -28,17 +28,18 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'portada_branding.png',
-    title: 'Branding',
+    img: 'portada-identidad.png',
+    title: 'Identidad de Marca',
     info:
-      'Este fue mi proyecto de segundo año de Diseño. Creé y diseñé el manual e identidad para la marca de calzados deportivos "Navein". Realicé aplicaciones en papelería, packaging y merchandising',
+      'Este fue mi proyecto de segundo año de Diseño. Creé y diseñé el manual de identidad para la marca de calzados deportivos "Navein". Realicé aplicaciones en papelería, packaging y merchandising',
     info2: 'Navein - Marca de Calzado Deportivo',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    manual: '', // if no repo, the button will not show up
+    repo: '',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'portada-web.png',
     title: 'Desarrollo Web',
     info: '',
     info2: '',
@@ -48,11 +49,20 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: 'Redes Sociales',
+    title: 'Vectorizados',
     info: '',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'Social Media',
+    info: '',
+    info2: '',
+    url: '',
+    repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -61,7 +71,7 @@ export const projectsData = [
     info: '',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -70,7 +80,7 @@ export const projectsData = [
     info: '',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -79,7 +89,7 @@ export const projectsData = [
     info: '',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -88,7 +98,7 @@ export const projectsData = [
     info: '',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
   },
 ];
 
