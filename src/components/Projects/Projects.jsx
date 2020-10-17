@@ -30,35 +30,37 @@ const Projects = () => {
   return (
     <section id="projects">
       <Container>
-        <button
-          className="section cta-btn cta-btn--hero"
-          target="_blank"
-          rel="noopener noreferrer"
-          type="button"
-          onClick={() => setCategory('branding')}
-        >
-          Branding
-        </button>
+        <div id="section-button">
+          <button
+            className="section-button cta-btn cta-btn--hero"
+            target="_blank"
+            rel="noopener noreferrer"
+            type="button"
+            onClick={() => setCategory('branding')}
+          >
+            Branding
+          </button>
 
-        <button
-          className="section cta-btn cta-btn--hero"
-          target="_blank"
-          rel="noopener noreferrer"
-          type="button"
-          onClick={() => setCategory('web')}
-        >
-          Web
-        </button>
+          <button
+            className="section-button cta-btn cta-btn--hero"
+            target="_blank"
+            rel="noopener noreferrer"
+            type="button"
+            onClick={() => setCategory('web')}
+          >
+            Web
+          </button>
 
-        <button
-          className="section cta-btn cta-btn--hero"
-          target="_blank"
-          rel="noopener noreferrer"
-          type="button"
-          onClick={() => setCategory(null)}
-        >
-          Todos
-        </button>
+          <button
+            className="section-button cta-btn cta-btn--hero"
+            target="_blank"
+            rel="noopener noreferrer"
+            type="button"
+            onClick={() => setCategory(null)}
+          >
+            Todos
+          </button>
+        </div>
         <div className="project-wrapper">
           <Title title="Proyectos" />
           {filteredProjects.map((project) => {
