@@ -11,6 +11,7 @@ const Projects = () => {
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [selectedCategory, setCategory] = useState(null);
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -22,13 +23,46 @@ const Projects = () => {
     }
   }, []);
 
+  const filteredProjects = selectedCategory
+    ? projects.filter((project) => project.category === selectedCategory)
+    : projects;
+
   return (
     <section id="projects">
       <Container>
+        <button
+          className="section cta-btn cta-btn--hero"
+          target="_blank"
+          rel="noopener noreferrer"
+          type="button"
+          onClick={() => setCategory('branding')}
+        >
+          Branding
+        </button>
+
+        <button
+          className="section cta-btn cta-btn--hero"
+          target="_blank"
+          rel="noopener noreferrer"
+          type="button"
+          onClick={() => setCategory('web')}
+        >
+          Web
+        </button>
+
+        <button
+          className="section cta-btn cta-btn--hero"
+          target="_blank"
+          rel="noopener noreferrer"
+          type="button"
+          onClick={() => setCategory(null)}
+        >
+          Todos
+        </button>
         <div className="project-wrapper">
           <Title title="Proyectos" />
-          {projects.map((project) => {
-            const { title, info, info2, url, manual, repo, img, id } = project;
+          {filteredProjects.map((project) => {
+            const { title, subtitle, info, info2, url, manual, repo, img, id } = project;
 
             return (
               <Row key={id}>
@@ -42,12 +76,13 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
+                      <h4 className="resalt">{subtitle || '2000'}</h4>
                       <div>
                         <p>
                           {info ||
                             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                         </p>
-                        <p className="mb-4">{info2 || ''}</p>
+                        <p className="resalt mb-4">{info2 || ''}</p>
                       </div>
                       <a
                         target="_blank"

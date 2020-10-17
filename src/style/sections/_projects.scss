@@ -10,10 +10,15 @@
   }
 
   .project-wrapper {
-    margin-bottom: 15rem;
+    margin-bottom: 0rem;
 
     @include respond(phone) {
       margin-bottom: 0rem;
+    }
+
+    .resalt {
+      font-weight: 525;
+      font-style: italic;
     }
 
     .row {

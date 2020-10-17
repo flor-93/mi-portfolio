@@ -79,6 +79,13 @@
   }
 }
 
+.section {
+  margin-left: 10px;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-end !important;
+}
+
 /* Arrow Button */
 .up i {
   color: #272727;
