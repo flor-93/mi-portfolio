@@ -37,6 +37,7 @@ export const projectsData = [
   //   url: '',
   //   repo: '', // if no repo, the button will not show up
   //   category: 'socialMedia',
+  //   hideButton: true,
   // },
   {
     id: nanoid(),
@@ -48,6 +49,7 @@ export const projectsData = [
     url: 'https://regalo-mama-2020.vercel.app/',
     repo: 'https://github.com/flor-93/regalo-mama-2020', // if no repo, the button will not show up
     category: 'web',
+    hideButton: false,
   },
   {
     id: nanoid(),
@@ -59,6 +61,7 @@ export const projectsData = [
     url: 'https://rock-paper-and-scissors.now.sh/',
     repo: 'https://github.com/flor-93/rock-paper-and-scissors', // if no repo, the button will not show up
     category: 'web',
+    hideButton: false,
   },
   {
     id: nanoid(),
@@ -70,7 +73,8 @@ export const projectsData = [
     info2: 'vectorizado',
     // url: '',
     // repo: '', // if no repo, the button will not show up
-    category: 'vectorizados',
+    category: 'vectorizado',
+    hideButton: true,
   },
   {
     id: nanoid(),
@@ -82,7 +86,8 @@ export const projectsData = [
     info2: 'Vectorizado',
     // url: '',
     // repo: '', // if no repo, the button will not show up
-    category: 'vectorizados',
+    category: 'vectorizado',
+    hideButton: true,
   },
   {
     id: nanoid(),
@@ -96,6 +101,7 @@ export const projectsData = [
     manual: '', // if no repo, the button will not show up
     repo: '',
     category: 'branding',
+    hideButton: true,
   },
   // {
   //   id: nanoid(),
@@ -107,17 +113,19 @@ export const projectsData = [
   //   url: '',
   //   repo: '', // if no repo, the button will not show up
   //   category: 'editorial',
+  //   hideButton: true,
   // },
   // {
   //   id: nanoid(),
   //   img: 'project.jpg',
   //   title: 'Bolsa de Tela estampada',
   //   subtitle: '2019',
-  //   info: 'Apliqué diseño a una bolsa de tela arsanal ',
+  //   info: 'Apliqué diseño a una bolsa de tela arsanal y luego realicé el estampado en serigrafía',
   //   info2: 'Serigrafía',
   //   url: '',
   //   repo: '', // if no repo, the button will not show up
   //   category: 'imprenta',
+  //   hideButton: true,
   // },
   {
     id: nanoid(),
@@ -131,6 +139,7 @@ export const projectsData = [
     manual: '', // if no repo, the button will not show up
     repo: '',
     category: 'branding',
+    hideButton: true,
   },
   {
     id: nanoid(),
@@ -144,6 +153,7 @@ export const projectsData = [
     manual: '', // if no repo, the button will not show up
     repo: '',
     category: 'branding',
+    hideButton: true,
   },
   {
     id: nanoid(),
@@ -157,106 +167,116 @@ export const projectsData = [
     manual: '', // if no repo, the button will not show up
     repo: '',
     category: 'branding',
+    hideButton: true,
   },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: 'Revista Fox',
-    subtitle: '2015',
-    info: '',
-    info2: 'Editorial',
-    url: '',
-    repo: '', // if no repo, the button will not show up
-    category: 'editorial',
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: 'Casamiento',
-    subtitle: '2015-2019',
-    info: '',
-    info2: 'Tarjetría social',
-    url: '',
-    repo: '', // if no repo, the button will not show up
-    category: 'imprenta',
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: 'Bautismo, Comunión, Confirmación',
-    subtitle: '2015-2019',
-    info: '',
-    info2: 'Tarjetría social',
-    url: '',
-    repo: '', // if no repo, the button will not show up
-    category: 'imprenta',
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: 'Cumpleaños y otros',
-    subtitle: '2015-2019',
-    info: '',
-    info2: 'Tarjetría social',
-    url: '',
-    repo: '', // if no repo, the button will not show up
-    category: 'imprenta',
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: 'Anillado',
-    subtitle: '2015-2019',
-    info: '',
-    info2: 'Encuadernación Artesanal',
-    url: '',
-    repo: '', // if no repo, the button will not show up
-    category: 'imprenta',
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: 'Cosido Copta',
-    subtitle: '2015-2019',
-    info: '',
-    info2: 'Encuadernación Artesanal',
-    url: '',
-    repo: '', // if no repo, the button will not show up
-    category: 'imprenta',
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: 'Cosido Estructura Cruzada',
-    subtitle: '2015-2019',
-    info: '',
-    info2: 'Encuadernación Artesanal',
-    url: '',
-    repo: '', // if no repo, the button will not show up
-    category: 'imprenta',
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: 'Cosido Belga',
-    subtitle: '2015-2019',
-    info: '',
-    info2: 'Encuadernación Artesanal',
-    url: '',
-    repo: '', // if no repo, the button will not show up
-    category: 'imprenta',
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: 'Cosido Japonés',
-    subtitle: '2015-2019',
-    info: '',
-    info2: 'Encuadernación Artesanal',
-    url: '',
-    repo: '', // if no repo, the button will not show up
-    category: 'imprenta',
-  },
+  // {
+  //   id: nanoid(),
+  //   img: 'project.jpg',
+  //   title: 'Revista Fox',
+  //   subtitle: '2015',
+  //   info: 'Diseño para revista de canal Fox que realicé en un trabajo de la materia Gráfica Asistida en segundo año de Diseño',
+  //   info2: 'Editorial',
+  //   url: '',
+  //   repo: '', // if no repo, the button will not show up
+  //   category: 'editorial',
+  //   hideButton: true,
+  // },
+  // {
+  //   id: nanoid(),
+  //   img: 'project.jpg',
+  //   title: 'Casamiento',
+  //   subtitle: '2015-2019',
+  //   info: 'Diseños de tarjetas de casamiento',
+  //   info2: 'Tarjetría social',
+  //   url: '',
+  //   repo: '', // if no repo, the button will not show up
+  //   category: 'imprenta',
+  //   hideButton: true,
+  // },
+  // {
+  //   id: nanoid(),
+  //   img: 'project.jpg',
+  //   title: 'Bautismo, Comunión, Confirmación',
+  //   subtitle: '2015-2019',
+  //   info: '',
+  //   info2: 'Tarjetría social',
+  //   url: '',
+  //   repo: '', // if no repo, the button will not show up
+  //   category: 'imprenta',
+  //   hideButton: true,
+  // },
+  // {
+  //   id: nanoid(),
+  //   img: 'project.jpg',
+  //   title: 'Cumpleaños y otros',
+  //   subtitle: '2015-2019',
+  //   info: '',
+  //   info2: 'Tarjetría social',
+  //   url: '',
+  //   repo: '', // if no repo, the button will not show up
+  //   category: 'imprenta',
+  //   hideButton: true,
+  // },
+  // {
+  //   id: nanoid(),
+  //   img: 'project.jpg',
+  //   title: 'Anillado',
+  //   subtitle: '2015-2019',
+  //   info: '',
+  //   info2: 'Encuadernación Artesanal',
+  //   url: '',
+  //   repo: '', // if no repo, the button will not show up
+  //   category: 'imprenta',
+  //   hideButton: true,
+  // },
+  // {
+  //   id: nanoid(),
+  //   img: 'project.jpg',
+  //   title: 'Cosido Copta',
+  //   subtitle: '2015-2019',
+  //   info: '',
+  //   info2: 'Encuadernación Artesanal',
+  //   url: '',
+  //   repo: '', // if no repo, the button will not show up
+  //   category: 'imprenta',
+  //   hideButton: true,
+  // },
+  // {
+  //   id: nanoid(),
+  //   img: 'project.jpg',
+  //   title: 'Cosido Estructura Cruzada',
+  //   subtitle: '2015-2019',
+  //   info: '',
+  //   info2: 'Encuadernación Artesanal',
+  //   url: '',
+  //   repo: '', // if no repo, the button will not show up
+  //   category: 'imprenta',
+  //   hideButton: true,
+  // },
+  // {
+  //   id: nanoid(),
+  //   img: 'project.jpg',
+  //   title: 'Cosido Belga',
+  //   subtitle: '2015-2019',
+  //   info: '',
+  //   info2: 'Encuadernación Artesanal',
+  //   url: '',
+  //   repo: '', // if no repo, the button will not show up
+  //   category: 'imprenta',
+  //   hideButton: true,
+  // },
+  // {
+  //   id: nanoid(),
+  //   img: 'project.jpg',
+  //   title: 'Cosido Japonés',
+  //   subtitle: '2015-2019',
+  //   info: '',
+  //   info2: 'Encuadernación Artesanal',
+  //   url: '',
+  //   repo: '', // if no repo, the button will not show up
+  //   category: 'imprenta',
+  //   hideButton: true,
+  // },
 ];
 
 // CONTACT DATA

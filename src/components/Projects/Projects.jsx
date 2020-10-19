@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-indent */
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
@@ -51,7 +53,7 @@ const Projects = () => {
             Web
           </button>
 
-          <button
+          {/* <button
             className="section-button cta-btn cta-btn--hero"
             target="_blank"
             rel="noopener noreferrer"
@@ -79,6 +81,16 @@ const Projects = () => {
             onClick={() => setCategory('socialMedia')}
           >
             Social Media
+          </button> */}
+
+          <button
+            className="section-button cta-btn cta-btn--hero"
+            target="_blank"
+            rel="noopener noreferrer"
+            type="button"
+            onClick={() => setCategory('vectorizado')}
+          >
+            Vectorizados
           </button>
 
           <button
@@ -95,7 +107,30 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Proyectos" />
           {filteredProjects.map((project) => {
-            const { title, subtitle, info, info2, url, manual, repo, img, id } = project;
+            const {
+              title,
+              subtitle,
+              info,
+              info2,
+              url,
+              manual,
+              repo,
+              img,
+              id,
+              hideButton,
+            } = project;
+
+            const ImageWrapper = hideButton
+              ? (props) => <div {...props} />
+              : (props) => (
+                  <a
+                    href={url || '#!'}
+                    target="_blank"
+                    aria-label="Project Link"
+                    rel="noopener noreferrer"
+                    {...props}
+                  />
+                );
 
             return (
               <Row key={id}>
@@ -117,16 +152,18 @@ const Projects = () => {
                         </p>
                         <p className="resalt mb-4">{info2 || ''}</p>
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        Ver Proyecto
-                      </a>
+                      {!hideButton && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero"
+                          href={url || '#!'}
+                        >
+                          Ver Proyecto
+                        </a>
+                      )}
 
-                      {manual && (
+                      {!hideButton && manual && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
@@ -137,7 +174,7 @@ const Projects = () => {
                         </a>
                       )}
 
-                      {repo && (
+                      {!hideButton && repo && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
@@ -159,12 +196,7 @@ const Projects = () => {
                     distance="30px"
                   >
                     <div className="project-wrapper__image">
-                      <a
-                        href={url || '#!'}
-                        target="_blank"
-                        aria-label="Project Link"
-                        rel="noopener noreferrer"
-                      >
+                      <ImageWrapper>
                         <Tilt
                           options={{
                             reverse: false,
@@ -182,7 +214,7 @@ const Projects = () => {
                             <ProjectImg alt={title} filename={img} />
                           </div>
                         </Tilt>
-                      </a>
+                      </ImageWrapper>
                     </div>
                   </Fade>
                 </Col>
