@@ -89,36 +89,8 @@
   right: 0;
   margin-right: 40px;
   top: 100px;
-  z-index: -1;
 }
 
 .section-button {
   margin-left: 12px;
-
-  @include respond(phone) {
-    background-image: none;
-    border: 2px solid $secondary-color;
-    -webkit-text-fill-color: $secondary-color;
-  }
-
-  &::after {
-    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-    // Responsive Button hero style
-    @include respond(phone) {
-      background-image: none;
-    }
-  }
-
-  &:hover {
-    -webkit-text-fill-color: $white-color;
-    text-decoration: none;
-    // Responsive Button hover hero style
-    @include respond(phone) {
-      -webkit-text-fill-color: $secondary-color;
-    }
-
-    &::after {
-      width: 100%;
-    }
-  }
 }

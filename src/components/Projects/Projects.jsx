@@ -56,11 +56,42 @@ const Projects = () => {
             target="_blank"
             rel="noopener noreferrer"
             type="button"
+            onClick={() => setCategory('editorial')}
+          >
+            Editorial
+          </button>
+
+          <button
+            className="section-button cta-btn cta-btn--hero"
+            target="_blank"
+            rel="noopener noreferrer"
+            type="button"
+            onClick={() => setCategory('imprenta')}
+          >
+            Imprenta
+          </button>
+
+          <button
+            className="section-button cta-btn cta-btn--hero"
+            target="_blank"
+            rel="noopener noreferrer"
+            type="button"
+            onClick={() => setCategory('socialMedia')}
+          >
+            Social Media
+          </button>
+
+          <button
+            className="section-button cta-btn cta-btn--hero"
+            target="_blank"
+            rel="noopener noreferrer"
+            type="button"
             onClick={() => setCategory(null)}
           >
             Todos
           </button>
         </div>
+
         <div className="project-wrapper">
           <Title title="Proyectos" />
           {filteredProjects.map((project) => {

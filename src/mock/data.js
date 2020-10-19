@@ -27,10 +27,102 @@ export const aboutData = {
 
 // PROJECTS DATA
 export const projectsData = [
+  // {
+  //   id: nanoid(),
+  //   img: 'project.jpg',
+  //   title: 'Social Media',
+  //   subtitle: '2020',
+  //   info: 'Diseñé post para redes sociales, algunos independientes otros que se intedran al diseño de feed',
+  //   info2: 'Social Media',
+  //   url: '',
+  //   repo: '', // if no repo, the button will not show up
+  //   category: 'socialMedia',
+  // },
   {
     id: nanoid(),
-    img: 'portada-identidad.png',
-    title: 'Navein - Marca de Calzado Deportivo',
+    img: 'galery-mom.png',
+    title: 'Galería con animación',
+    subtitle: '2020',
+    info: 'Desarrollé una galería con fotos familiares en un sitio web como regalo de cumpleaños',
+    info2: 'Desarrollo Web',
+    url: 'https://regalo-mama-2020.vercel.app/',
+    repo: 'https://github.com/flor-93/regalo-mama-2020', // if no repo, the button will not show up
+    category: 'web',
+  },
+  {
+    id: nanoid(),
+    img: 'rock-paper-and-scissors.png',
+    title: 'Juego de piedra, papel o tijera',
+    subtitle: '2020',
+    info: 'Este fue un desafio de desarrollo para hacer un juego de piedra papel o tijera online',
+    info2: 'Desarrollo Web',
+    url: 'https://rock-paper-and-scissors.now.sh/',
+    repo: 'https://github.com/flor-93/rock-paper-and-scissors', // if no repo, the button will not show up
+    category: 'web',
+  },
+  {
+    id: nanoid(),
+    img: 'tabla-medicion-1.png',
+    title: 'Redibujado de Tabla de medición',
+    subtitle: '2020',
+    info:
+      'A pedido de un cliente redibujé una tabla de medición para niños a escala real, con el fin de cortar el vínilo',
+    info2: 'vectorizado',
+    // url: '',
+    // repo: '', // if no repo, the button will not show up
+    category: 'vectorizados',
+  },
+  {
+    id: nanoid(),
+    img: 'icono-en-casa-1.png',
+    title: 'Redibujado de icono "En casa"',
+    subtitle: '2020',
+    info:
+      'Realicé un redibujado de este icono partiendo de una imagen en baja calidad, evíada por un cliente',
+    info2: 'Vectorizado',
+    // url: '',
+    // repo: '', // if no repo, the button will not show up
+    category: 'vectorizados',
+  },
+  {
+    id: nanoid(),
+    img: 'portada-cardales-festivo-white.png',
+    title: 'Cardales Festivo',
+    subtitle: '2019',
+    info:
+      'Con este proyecto me recibí de la carrera de Diseño Gráfico. Consistía en  la identidad de un logo para turismo de un pueblo, donde el principal atractivo son fiesta que se realizan cada año con una importante convocatiria de gente de todos lados. Realicé aplicaciones en papelería, señaletica y merchandising',
+    info2: 'Identidad de Marca',
+    url: '',
+    manual: '', // if no repo, the button will not show up
+    repo: '',
+    category: 'branding',
+  },
+  // {
+  //   id: nanoid(),
+  //   img: 'project.jpg',
+  //   title: 'Revista Cardales Festivo',
+  //   subtitle: '2019',
+  //   info: 'Esto es parte del trabajo final de tercer año de identidad de marca. Es una revista de noticias locales del pueblo de Los Cardales.',
+  //   info2: 'Editorial',
+  //   url: '',
+  //   repo: '', // if no repo, the button will not show up
+  //   category: 'editorial',
+  // },
+  // {
+  //   id: nanoid(),
+  //   img: 'project.jpg',
+  //   title: 'Bolsa de Tela estampada',
+  //   subtitle: '2019',
+  //   info: 'Apliqué diseño a una bolsa de tela arsanal ',
+  //   info2: 'Serigrafía',
+  //   url: '',
+  //   repo: '', // if no repo, the button will not show up
+  //   category: 'imprenta',
+  // },
+  {
+    id: nanoid(),
+    img: 'portada-navein-white.png',
+    title: 'Navein - Calzado Deportivo',
     subtitle: '2017',
     info:
       'Este fue mi proyecto de segundo año de Diseño. Creé y diseñé el manual de identidad para la marca de calzados deportivos "Navein". Realicé aplicaciones en papelería, packaging y merchandising',
@@ -42,11 +134,11 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'portada-identidad.png',
-    title: 'Cardales Festivo',
-    subtitle: '2019',
+    img: 'foto-vino.png',
+    title: 'Etiqueta de vino',
+    subtitle: '2016',
     info:
-      'Con este proyecto me recibí de la carrera de Diseño Gráfico. Consistía en  la identidad de un logo para turismo de un pueblo, donde el principal atractivo son fiesta que se realizan cada año con una importante convocatiria de gente de todos lados. Realicé aplicaciones en papelería, señaletica y merchandising',
+      'Trabajo de fotografía en tercer año de Diseño. Realizamos diseño de una etiqueta de vino y lugo hicimos fotografía de producto.',
     info2: 'Identidad de Marca',
     url: '',
     manual: '', // if no repo, the button will not show up
@@ -55,7 +147,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'portada-identidad.png',
+    img: 'goyana.png',
     title: 'Goyaná - Hotel',
     subtitle: '2015',
     info:
@@ -68,71 +160,102 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'portada-web.png',
-    title: 'Juego de piedra, papel o tijera',
-    subtitle: '2020',
-    info: 'Este fue un desafio de desarrollo para hacer un juego de piedra papel o tijera online',
-    info2: 'Desarrollo Web',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-    category: 'web',
-  },
-  {
-    id: nanoid(),
     img: 'project.jpg',
-    title: 'Redibujado de icono "En casa"',
-    subtitle: '2020',
-    info:
-      'Realicé un redibujado de este icono partiendo de una imagen en baja calidad, evíada por un cliente',
-    info2: 'Vectorizado',
-    url: '',
-    repo: '', // if no repo, the button will not show up
-    category: 'vectorizados',
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: 'Social Media',
+    title: 'Revista Fox',
+    subtitle: '2015',
     info: '',
-    info2: '',
+    info2: 'Editorial',
     url: '',
     repo: '', // if no repo, the button will not show up
+    category: 'editorial',
   },
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: 'Editorial',
+    title: 'Casamiento',
+    subtitle: '2015-2019',
     info: '',
-    info2: '',
+    info2: 'Tarjetría social',
     url: '',
     repo: '', // if no repo, the button will not show up
+    category: 'imprenta',
   },
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: 'Tarjetría social',
+    title: 'Bautismo, Comunión, Confirmación',
+    subtitle: '2015-2019',
     info: '',
-    info2: '',
+    info2: 'Tarjetría social',
     url: '',
     repo: '', // if no repo, the button will not show up
+    category: 'imprenta',
   },
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: 'Artesanal',
+    title: 'Cumpleaños y otros',
+    subtitle: '2015-2019',
     info: '',
-    info2: '',
+    info2: 'Tarjetría social',
     url: '',
     repo: '', // if no repo, the button will not show up
+    category: 'imprenta',
   },
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: 'Fotografía',
+    title: 'Anillado',
+    subtitle: '2015-2019',
     info: '',
-    info2: '',
+    info2: 'Encuadernación Artesanal',
     url: '',
     repo: '', // if no repo, the button will not show up
+    category: 'imprenta',
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'Cosido Copta',
+    subtitle: '2015-2019',
+    info: '',
+    info2: 'Encuadernación Artesanal',
+    url: '',
+    repo: '', // if no repo, the button will not show up
+    category: 'imprenta',
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'Cosido Estructura Cruzada',
+    subtitle: '2015-2019',
+    info: '',
+    info2: 'Encuadernación Artesanal',
+    url: '',
+    repo: '', // if no repo, the button will not show up
+    category: 'imprenta',
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'Cosido Belga',
+    subtitle: '2015-2019',
+    info: '',
+    info2: 'Encuadernación Artesanal',
+    url: '',
+    repo: '', // if no repo, the button will not show up
+    category: 'imprenta',
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'Cosido Japonés',
+    subtitle: '2015-2019',
+    info: '',
+    info2: 'Encuadernación Artesanal',
+    url: '',
+    repo: '', // if no repo, the button will not show up
+    category: 'imprenta',
   },
 ];
 
