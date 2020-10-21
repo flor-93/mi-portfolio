@@ -184,11 +184,11 @@ export const footerData = {
       name: 'twitter',
       url: '', // your twitter url
     },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '', // your codepen url
-    },
+    // {
+    //   id: nanoid(),
+    //   name: 'codepen',
+    //   url: '', // your codepen url
+    // },
     {
       id: nanoid(),
       name: 'linkedin',
