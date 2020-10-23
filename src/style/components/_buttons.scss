@@ -89,6 +89,18 @@
   right: 0;
   margin-right: 40px;
   top: 100px;
+
+  @include respond(phone) {
+    position: relative;
+    top: -50px;
+    margin-bottom: 10px;
+  }
+
+  @include respond(tab-land) {
+    position: relative;
+    top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .section-button {

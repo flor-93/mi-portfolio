@@ -43,7 +43,7 @@ const About = () => {
                 <h2 className="section-title" style={{ textAlign: 'start' }}>
                   Sobre mí
                 </h2>
-                <p className="about-wrapper__info-text" style={{ fontSize: '24px' }}>
+                <p className="about-wrapper__info-text">
                   {paragraphOne || (
                     <span>
                       Fana de Harry Potter y del diseño. Me desafío día a día a poder comunicar una
@@ -51,17 +51,14 @@ const About = () => {
                     </span>
                   )}
                 </p>
-                <p
-                  className="about-wrapper__info-text"
-                  style={{ paddingTop: '20px', fontSize: '24px' }}
-                >
+                <p className="about-wrapper__info-text">
                   {paragraphTwo || (
                     <div>
-                      <span>
+                      <span className="_1">
                         <i>"Menos es más" </i>
                       </span>
                       <br />
-                      <p style={{ fontSize: '16px' }}>es mí frase de cabecera.</p>
+                      <p className="_2">es mí frase de cabecera.</p>
                       {/* <span>
                         Me encanta poder combinar estos dos mundos para así lograr crear un espacio
                         en el que el usuario tenga una experiencia interactiva en un sitio web o
