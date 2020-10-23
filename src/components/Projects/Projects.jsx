@@ -29,6 +29,13 @@ const Projects = () => {
     ? projects.filter((project) => project.category === selectedCategory)
     : projects;
 
+  // const orderProject = () => {                        //  //   //
+  //   if (window.innerWidth > 769) {                   //  //   //
+  //     setIsDesktop(true);                           //  //   //
+  //     setIsMobile(false);                           \\  \\   \\
+  //   }                                                \\  \\   \\
+  // };                                                  \\  \\   \\
+
   return (
     <section id="projects">
       <Container>
